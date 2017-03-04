@@ -17,7 +17,7 @@ options = {
 }
 
 # Print the first element of the list
-pprint(client.search('Steve Jobs', options)[0]['image']['contextLink']
+pprint(client.search('Steve Jobs', options)[0]['image']['contextLink'])
 
 #If you want to download the images to your computer just call this function
 def downloadPhoto(folder, photo_url):
