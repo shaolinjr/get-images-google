@@ -39,7 +39,7 @@ def downloadPhoto(folder, photo_url):
 
 #Example:
 url = client.search('Steve Jobs', options)[0]['image']['contextLink']
-downloadPhoto("/Desktop",url)
+downloadPhoto("/Desktop",url) #will download this photo, to download all photos or more then one, just put in a url's loop
 
 #If you wish to get all the links:
 search = client.search('Steve Jobs', options)
