@@ -17,7 +17,7 @@ options = {
 }
 
 # Print the first element of the list
-pprint(client.search('Steve Jobs', options)[0]['image']['contextLink'])
+client.search('Steve Jobs', method='crawler')
 
 #If you want to download the images to your computer just call this function
 def downloadPhoto(folder, photo_url):
@@ -38,15 +38,15 @@ def downloadPhoto(folder, photo_url):
 
 
 #Example:
-url = client.search('Steve Jobs', options)[0]['image']['contextLink']
-downloadPhoto("/Desktop",url) #will download this photo, to download all photos or more then one, just put in a url's loop
+# url = client.search('Steve Jobs', options)[0]['image']['contextLink']
+# downloadPhoto("/Desktop",url) #will download this photo, to download all photos or more then one, just put in a url's loop
 
 #If you wish to get all the links:
-search = client.search('Steve Jobs', options)
-links = []
-for index, link in enumerate(search):
-
-    links.append(link[index]['image']['contextLink']) #appending all links
-
-
-print(links)
+# search = client.search('Steve Jobs', options)
+# links = []
+# for index, link in enumerate(search):
+#
+#     links.append(link[index]['image']['contextLink']) #appending all links
+#
+#
+# print(links)
